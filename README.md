@@ -1,54 +1,47 @@
-# Automated-Data-Labeling-Dashboard
-An end-to-end Automated Data Labeling Dashboard that enables uploading raw datasets, auto-labeling records using AI, reviewing and overriding labels, and tracking labeling progress through an interactive dashboard.
+# 📊 Automated Data Labeling Dashboard
 
-🚀 Features
+An end-to-end **Automated Data Labeling Dashboard** that enables uploading raw datasets, auto-labeling records using AI, reviewing and overriding labels, and tracking labeling progress through an interactive dashboard.
 
-📁 Upload CSV or JSON datasets
+---
 
-🧠 AI-powered auto-labeling using OpenAI (pluggable)
+## 🚀 Features
 
-👤 Human-in-the-loop review
+- 📁 Upload **CSV or JSON** datasets  
+- 🧠 **AI-powered auto-labeling** using OpenAI (pluggable)  
+- 👤 **Human-in-the-loop review**
+  - Accept AI-generated labels
+  - Override labels manually  
+- 📊 **Real-time statistics**
+  - Total records
+  - Pending, labeled, and approved counts  
+- 🗂️ Persistent storage using **MongoDB**  
+- 🎨 Clean UI built with **Ant Design**
 
-Accept AI labels
+---
 
-Override labels manually
+## 🏗️ Tech Stack
 
-📊 Real-time statistics
+### Frontend
+- React.js
+- Redux
+- Ant Design
 
-Total records
+### Backend
+- Node.js
+- Express.js
 
-Pending, labeled, and approved counts
+### Database
+- MongoDB
+- Mongoose ODM
 
-🗂️ Persistent storage using MongoDB
+### AI Integration
+- OpenAI API (configurable via environment variables)
 
-🎨 Clean UI built with Ant Design
+---
 
-🏗️ Tech Stack
-Frontend
+## 📁 Project Structure
 
-React.js
-
-Redux
-
-Ant Design
-
-Backend
-
-Node.js
-
-Express.js
-
-Database
-
-MongoDB
-
-Mongoose ODM
-
-AI Integration
-
-OpenAI API (configurable via environment variables)
-
-📁 Project Structure
+```text
 automated-data-labeling-dashboard/
 │
 ├── backend/
@@ -99,7 +92,7 @@ USE_OPENAI=false
 OPENAI_API_KEY=sk-xxxxxxxx
 
 
-Start backend:
+Start the backend server:
 
 npm start
 
@@ -122,20 +115,20 @@ http://localhost:3000
 
 This project supports OpenAI-based auto-labeling.
 
-Enable OpenAI:
+Enable OpenAI
 
-Add a valid OPENAI_API_KEY in .env
+Add a valid OPENAI_API_KEY in the .env file
 
 Set:
 
 USE_OPENAI=true
 
 
-Restart backend
+Restart the backend server
 
-Fallback Mode:
+Fallback Mode
 
-If OpenAI is disabled or unavailable, the system uses a mock labeling engine for development and evaluation purposes.
+If OpenAI is disabled or unavailable, the system uses a mock labeling engine for development and evaluation.
 
 This ensures:
 
@@ -163,9 +156,9 @@ GET /label/stats
 
 📊 Dashboard Workflow
 
-Upload CSV/JSON dataset
+Upload CSV or JSON dataset
 
-Records saved with PENDING status
+Records are saved with PENDING status
 
 Trigger Auto Label
 
@@ -188,37 +181,4 @@ Upload
 
 Auto-labeling
 
-Review & approval workflow
-
-📸 Screenshots (Recommended for Submission)
-
-Dataset upload success
-
-Auto-labeled records
-
-Review & override UI
-
-Approved records
-
-Statistics dashboard
-
-🧠 Design Considerations
-
-Clean separation of concerns (Upload → Label → Review)
-
-Environment-based AI integration
-
-Production-style fallback strategy
-
-Extensible architecture for future AI models
-
-✅ Status
-
-✔ All requirements implemented
-✔ Fully functional and demo-ready
-✔ Clean, maintainable, and extensible codebase
-
-📌 Author
-
-Prem Aman
-Automated Data Labeling Dashboard – Company Assignment Submission
+Review and approval workflow
