@@ -39,40 +39,7 @@ An end-to-end **Automated Data Labeling Dashboard** that enables uploading raw d
 
 ---
 
-## 📁 Project Structure
-
-```text
-automated-data-labeling-dashboard/
-│
-├── backend/
-│   ├── config/
-│   │   └── db.js
-│   ├── controllers/
-│   │   ├── uploadController.js
-│   │   └── labelController.js
-│   ├── models/
-│   │   └── DataItem.js
-│   ├── routes/
-│   │   ├── uploadRoutes.js
-│   │   └── labelRoutes.js
-│   ├── uploads/
-│   ├── .env.example
-│   ├── server.js
-│   └── package.json
-│
-├── frontend/
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       ├── store/
-│       ├── App.js
-│       └── index.js
-│
-├── demo-data.json
-└── README.md
-
-⚙️ Setup Instructions
+⚙️ Setup Instructions 
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/automated-data-labeling-dashboard.git
 cd automated-data-labeling-dashboard
@@ -182,3 +149,38 @@ Upload
 Auto-labeling
 
 Review and approval workflow
+
+## 📁 Project Structure
+
+```text
+automated-data-labeling-dashboard/
+│
+├── backend/
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── uploadController.js
+│   │   └── labelController.js
+│   ├── models/
+│   │   └── DataItem.js
+│   ├── routes/
+│   │   ├── uploadRoutes.js
+│   │   └── labelRoutes.js
+│   ├── uploads/
+│   ├── .env.example
+│   ├── server.js
+│   └── package.json
+│
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── store/
+│       ├── App.js
+│       └── index.js
+│
+├── demo-data.json
+└── README.md
+
+
